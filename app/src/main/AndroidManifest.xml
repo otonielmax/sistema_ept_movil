@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.otoniel.sistemaept">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ept"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="Sistema EPT"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Sistema EPT">
+
+        </activity>
+
+        <activity
+            android:name=".MenuPrincipal"
+            android:label="Sistema EPT">
+
+        </activity>
+
+        <activity
+            android:name=".Graficas"
+            android:label="Avance de Proyectos">
+
+        </activity>
+
+        <activity
+            android:name=".GraficosBarChartAvance"
+            android:label="Avance Financiero">
+
+        </activity>
+
+        <activity
+            android:name=".ListaProyectos"
+            android:label="Avance de Proyectos">
+
+        </activity>
+
+        <activity
+            android:name=".GraficasEstatus"
+            android:label="Estatus de Proyectos">
+
+        </activity>
+
+        <activity
+            android:name=".ControladorVistaProyectos"
+            android:label="Proyecto">
+
+        </activity>
+
+        <service
+            android:name=".ServicioDeNotoficaciones"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+    </application>
+
+</manifest>

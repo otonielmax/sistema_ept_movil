@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/MainActivity"
+    android:background="@mipmap/fondo_vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="103dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Iniciar Sesión"
+            android:background="@drawable/activity_main_bordes"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_horizontal"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/header" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:gravity="center|center_horizontal"
+            android:background="#d7d7d7"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/str_usuario"
+                android:hint="Ingresa tu usuario"
+                android:inputType="text"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:typeface="normal"
+                android:fontFamily="sans-serif-light" />
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Password"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffffff" />
+            -->
+            <EditText
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="textPassword"
+                android:id="@+id/str_password"
+                android:hint="Ingresa tu contraseña"
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:typeface="normal"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:id="@+id/login_boton"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/activity_main_inferior"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

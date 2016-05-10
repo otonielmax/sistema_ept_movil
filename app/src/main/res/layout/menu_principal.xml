@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_radius"
+    android:orientation="vertical">
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Principal"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/menu_principal_superior"/>
+     -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="#d7d7d7">
+
+        <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icono_avance"
+            android:src="@mipmap/finanza"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/menu_principal_superior"/>
+        -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estatus de Proyectos"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_principal_superior"
+            android:textSize="16dp"
+            android:drawableLeft="@mipmap/estatus"
+            android:textColor="#757575"
+            android:id="@+id/estatus"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:paddingLeft="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avance Financiero"
+            android:background="@drawable/menu_principal_superior"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:drawableLeft="@mipmap/finanza"
+            android:id="@+id/avance"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_principal_superior"
+            android:layout_margin="5dp"
+            android:textSize="16dp"
+            android:textColor="#757575"
+            android:id="@+id/salir"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
